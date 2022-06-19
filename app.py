@@ -18,6 +18,8 @@ data_collection = db.data
 if __name__=='__main__':
     app.run(debug=True)
 
+
+# running db_populate() in background thread to populate mongodb
 def db_populate():
     while True:
         result = yt.fetchApiResults()
