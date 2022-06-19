@@ -3,7 +3,7 @@ from api_constants import api_key
 
 youtube = build('youtube', 'v3', developerKey=api_key)
 
-def performTask():
+def fetchApiResults():
     request = youtube.search().list(
         q='cricket',
         part='snippet',
